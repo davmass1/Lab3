@@ -1,0 +1,55 @@
+<!-- Mason Davidson 4/6/2022 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Flexbox</title>
+<meta charset="UTF-8">
+<meta name="description" content="Flexbox">
+<meta name="author" content="Mason Davidson">
+<meta name="keywords" content="HTML, CSS">
+<meta name="viewport" content="width=device-width, initial=scale1.0">
+<style>
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FA8072;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+}
+body {
+  background-color: orange;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+</style>
+</head>
+<body>
+<h1>Flexible Boxes</h1>
+
+<div class="flex-container">
+  <div>This</div>
+  <div>is</div>
+  <div>a</div>  
+  <div>board</div>
+  <div>of</div>
+  <div>various</div>  
+  <div>flex boxes</div>
+  <div>how</div>
+  <div>fun</div>
+</div>
+
+<p>Try to resize the browser window.</p>
+<p>A container with "flex-wrap: nowrap;" will never wrap its items.</p>
+<p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+
+</body>
+</html>

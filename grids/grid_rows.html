@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 200px 100px;
+  grid-gap: 50px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: cyan;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+body {
+  background-color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+</style>
+</head>
+<body>
+
+<h1>The grid-template-rows Property Page 3</h1>
+
+<p>Use the <em>grid-template-rows</em> property to define the size of the rows in a grid layout.</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>
+</div>
+
+</body>
+</html>

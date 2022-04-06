@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 5px;
+  background-color: cyan;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: purple;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 30px;
+  grid-gap: 20px;
+}
+
+.item1 {
+  grid-column: 1 / span 5;
+  grid-column: 1 / span 5;
+}
+
+body {
+  background-color: orange;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+  .wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+</style>
+</head>
+<body>
+
+<h1>The grid-column Property page 5</h1>
+
+<p>Use the <em>grid-column</em> property to specify on which column to place an item, and how many columns the item will span.</p>
+<p>This property is a shorthand property for the grid-column-start and grid-column-end properties.</p>
+
+<div class="grid-container">
+<div class="item1">1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>
+  <div class="item9">9</div>
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
+  <div class="item13">13</div>
+  <div class="item14">14</div>
+  <div class="item15">15</div>
+</div>
+________________________________________
+
+
+</body>
+</html>
